@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DA3644"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/recipe_image_TXV_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_margin="10dp"
+        android:textSize="30dp"
+        android:text="Title"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/recipe_image_IMG_photo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/img_gallery"
+            android:background="#FFFFFF"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            />
+        <com.ortiz.touchview.TouchImageView
+            android:id="@+id/recipe_image_IMG_recipe_photo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/img_gallery"
+            android:background="#FFFFFF"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="#DA3644">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Recipe by Picture"
+                android:layout_centerInParent="true"
+                android:layout_alignParentLeft="true"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="25dp"/>
+            <Button
+                android:id="@+id/image_BTN_go_to_manual"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:text="M"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+        <EditText
+            android:id="@+id/image_EDT_recipe_name"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:padding="5dp"
+            android:hint="Enter recipe name"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <Button
+                android:id="@+id/image_BTN_add_categories"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/home"
+                android:text="Add categories"/>
+            <TextView
+                android:id="@+id/image_TXV_recipe_categories"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/white"
+                android:layout_margin="5dp"
+                android:textSize="14sp"
+               />
+
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add recipe photo"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:id="@+id/image_IMG_recipe_photo"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/img_gallery"
+            android:background="#FFFFFF"
+            android:scaleType="centerCrop"
+            android:layout_margin="5dp"
+            android:layout_gravity="center"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add dish photo"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:id="@+id/image_IMG_food_photo"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/img_gallery"
+            android:background="#FFFFFF"
+            android:scaleType="centerCrop"
+            android:layout_margin="5dp"
+            android:layout_gravity="center"/>
+
+        <Button
+            android:id="@+id/image_BTN_save_recipe"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="Save"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/home"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

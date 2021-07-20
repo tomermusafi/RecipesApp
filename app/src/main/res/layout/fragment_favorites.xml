@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DA3644"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Favorites"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="25dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="10dp"
+        >
+
+        <EditText
+            android:id="@+id/favorites_EDT_name"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:hint="Enter the recipe name"
+            android:padding="5dp"
+            android:textSize="15sp"
+            android:layout_margin="5dp"
+            android:background="@color/white"
+            android:inputType="text"
+            android:autofillHints="" />
+
+        <EditText
+            android:id="@+id/favorites_EDT_link"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:hint="Past here the link for the recipe"
+            android:padding="5dp"
+            android:textSize="15sp"
+            android:background="@color/white"
+            android:inputType="text"
+            android:autofillHints="" />
+
+        <Button
+            android:id="@+id/favorites_BTN_save"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/home"
+            android:text="Save" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/favorites_RCV_recipes"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"/>
+
+
+</LinearLayout>

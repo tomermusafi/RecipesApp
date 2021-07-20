@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="20dp"
+    android:background="#DA3644"
+    >
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add Recipe Manually"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentLeft="true"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="25dp"/>
+                <Button
+                    android:id="@+id/manual_BTN_go_to_picture"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:text="P"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/manual_EDT_recipe_name"
+                android:layout_width="250dp"
+                android:layout_height="30dp"
+                android:background="#FFFFFF"
+                android:padding="5sp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="left"
+                android:hint="Enter recipe name"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <AutoCompleteTextView
+                    android:id="@+id/manual_ACTV_ingredient"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_margin="5dp"
+                    android:padding="5sp"
+                    android:completionThreshold="1"
+                    android:hint="ingredient"
+
+
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/white"
+                    android:layout_weight="1"/>
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <EditText
+                    android:id="@+id/manual_ET_amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_margin="5dp"
+                    android:padding="5sp"
+                    android:hint="Amount"
+                    android:inputType="number"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/white"
+                    android:layout_weight="1"/>
+
+                <AutoCompleteTextView
+                    android:id="@+id/manual_ACTV_units"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:hint="Units"
+                    android:completionThreshold="1"
+                    android:padding="5sp"
+                     />
+                <Button
+                    android:id="@+id/manual_BTN_add"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:backgroundTint="@color/white"
+                    android:textColor="@color/home"
+                    android:text="Add"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"/>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/manual_SCV_ingredients"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@color/white">
+
+
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Recipe instruction"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/white"
+                android:textStyle="bold"/>
+            <EditText
+                android:id="@+id/manual_EDT_recipe_instruction"
+                android:layout_width="250dp"
+                android:layout_height="200dp"
+                android:background="#FFFFFF"
+                android:gravity="top"
+                android:padding="5sp"
+                android:layout_gravity="center_horizontal"
+                android:hint="Enter recipe instruction"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <Button
+                    android:id="@+id/manual_BTN_add_categories"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+
+                    android:backgroundTint="@color/white"
+                    android:textColor="@color/home"
+                    android:text="Add categories"/>
+                <TextView
+                    android:id="@+id/manual_TXV_recipe_categories"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/white"
+                    android:layout_margin="5dp"
+                    android:textSize="14sp"
+                   />
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add dish photo"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/white"
+                android:textStyle="bold"/>
+            <ImageView
+                android:id="@+id/manual_IMG_food_photo"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@drawable/img_gallery"
+                android:background="#FFFFFF"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center"/>
+
+            <Button
+                android:id="@+id/manual_BTN_save_recipe"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="Save"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/home"
+                android:layout_gravity="center"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+
+
+</RelativeLayout>

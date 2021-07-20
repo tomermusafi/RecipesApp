@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DA3644"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Recipes"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="25dp"/>
+
+
+    <LinearLayout
+        android:id="@+id/home_LL_search"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:gravity="center">
+
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            app:strokeColor="@android:color/holo_red_light"
+            app:strokeWidth="2dp"
+            app:cardElevation="5dp"
+            app:cardCornerRadius="90dp"
+            >
+            <androidx.appcompat.widget.SearchView
+                android:id="@+id/home_SV_search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:queryBackground="@android:color/transparent"
+                app:closeIcon="@null"
+                app:iconifiedByDefault="false"
+                android:paddingStart="10dp"
+                app:queryHint="Search recipes"
+                app:searchIcon="@null"
+                />
+        </com.google.android.material.card.MaterialCardView>
+        <ImageView
+            android:id="@+id/home_IMG_filter"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/img_filter"/>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/home_RCV_recipes"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/home_LL_search"
+       />
+
+</LinearLayout>

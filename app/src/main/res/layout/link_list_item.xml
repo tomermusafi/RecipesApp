@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="3dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/name1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fish"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:paddingBottom="10dp"
+            android:paddingStart="5dp"/>
+        <TextView
+            android:id="@+id/url"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:paddingStart="5dp"
+            android:textColor="@android:color/holo_blue_dark"
+            android:paddingBottom="10dp"
+            android:text="hfjskd, fdsd, sdgd, dsdsg,"/>
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

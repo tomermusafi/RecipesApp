@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DA3644"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search by ingredients"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="25dp"/>
+
+    <LinearLayout
+        android:id="@+id/search_LL_btns"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+        <AutoCompleteTextView
+            android:id="@+id/search_EDT_ingredient"
+            android:layout_width="200dp"
+            android:layout_height="35dp"
+            android:hint="Enter ingredient"
+            android:padding="5dp"
+            android:completionThreshold="1"
+            android:background="@color/white"
+            android:layout_gravity="center_vertical"/>
+        <Button
+            android:id="@+id/search_BTN_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/home"
+            android:layout_gravity="center_vertical"
+            android:text="Add"/>
+
+
+    </LinearLayout>
+
+    <ScrollView
+
+        android:layout_width="280dp"
+        android:layout_height="200dp"
+        android:background="@color/white"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/search_LL_btns">
+        <LinearLayout
+            android:id="@+id/search_SCV_ingredients"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"/>
+
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/search_BTN_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:layout_margin="5dp"
+            android:textColor="@color/home"
+            android:text="Search"/>
+        <Button
+            android:id="@+id/search_BTN_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:layout_margin="5dp"
+            android:textColor="@color/home"
+            android:text="Clear"/>
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/search_RCV_recipes"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+</LinearLayout>
